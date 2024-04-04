@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            height: 35px;
+            width: 100%; /* Setting the width property correctly */
+            text-align: center;
+        }
+        body{
+          background-color:37, 77%, 43%;
+        }
+        #kimmi{
+          height: 20px;
+          width: 80px;
+          color:41, 178, 99;
+        }
+      
+    </style>
+</head>
+<body>
+<!-- Inframe -->
+<div class="centered">
+<iframe src="inframecontent.html" frameborder="0" height="250px" width="550px" ></iframe>
+</div>
+<!-- HTML Forms -->
+</form> 
+
+  <div class="container">
+    <h2 >HTML FORM</h2>
+    <form action="action_page.php" target="_blank">
+        <label for="fname">FIRST NAME:</label><br>
+        <input type="text" id="fname" name="fname" value="kimmi" size="20" maxlength="5"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="kumari">
+        <input type="submit" value="submit">
+        <!-- Html radio button -->
+        <h1>INPUT Radio Buttons</h1>
+        <input type="radio" id="html" name="fav_language" value="CSS">
+
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <input type="submit" value="submit">
+
+        <h1>INPUT checkbox</h1>
+        <input type="checkbox" id="html" name="fav_language" value="CSS">
+
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <input type="submit" value="Submit">
+        <h1>To select element</h1>
+        <label for="cars"choose car:></label>
+        <select name="car" id="cars">
+        <option value="volo">volo</option>
+        <option value="blue">blue</option>
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        </select>
+       <input type="submit">
+       <h2>Textarea </h2>
+       <textarea name="message" id="" cols="30" rows="10"> Write to know more.</textarea>
+       <br>
+       <button id="kimmi"type="button" onclick="alert('hello world')">click me</button>
+       <br>
+       <label for="favicon">select your favorite color</label>
+       <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+       <input type="submit" value="submit">
+       <h>Semantic HTML Example</h>
+    </form>
+</div>
+
+<header>
+  <h1>Welcome to Our Website</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<section>
+  <h2>Our Services</h2>
+  <article>
+    <h3>Service 1</h3>
+    <p>Description of Service 1.</p>
+  </article>
+  <article>
+    <h3>Service 2</h3>
+    <p>Description of Service 2.</p>
+  </article>
+  <article>
+    <h3>Service 3</h3>
+    <p>Description of Service 3.</p>
+  </article>
+</section>
+
+<aside>
+  <h2>Latest News</h2>
+  <article>
+    <h3>News Title 1</h3>
+    <p>Description of the latest news.</p>
+  </article>
+  <article>
+    <h3>News Title 2</h3>
+    <p>Description of the latest news.</p>
+  </article>
+</aside>
+</main>
+
+<footer>
+<p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
+
