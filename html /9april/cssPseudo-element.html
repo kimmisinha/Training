@@ -5,9 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    p:first-child{
-      color: aqua;
+    p:nth-child(2n+1){
+      color: rgb(255, 102, 153);
     }
+    p:nth-child(2n){
+      color: rgb(153, 255, 156);
+    }
+    p:nth-last-child(){
+      color: rgba(45, 89, 142, 0.628);
+    }
+     p:first-child{ 
+     color: hsl(299, 100%, 50%); 
+     } 
+     a[target]{
+      background-color: #ff0000;
+     }
+  
   </style>
 </head>
 <body>
@@ -17,23 +30,27 @@
     <p>Text 3</p>
     <p>Text 4</p>
   </div>
+
   <div>
     <p>Text 5</p>
     <p>Text 6</p>
     <p>Text 7</p>
     <p>Text 8</p>
   </div>
+
   <div>
     <p>Text 9</p>
     <p>Text 10</p>
     <p>Text 11</p>
     <p>Text 12</p>
   </div>
+
   <div>
     <p>Text 13</p>
     <p>Text 14</p>
     <p> Text 15</p>
     <p>Text 16</p>
   </div>
+  <div class="hello"><a href="https://www.w3schools.com/css/css_attribute_selectors.asp" target="_blank">w3schools</a></div>
 </body>
 </html>
