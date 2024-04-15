@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #image1{
+      border: 10px solid transparent;
+      padding: 15px;
+     border-image: url(abcd.jpeg) 20 space;
+     /* border-image: url(abcd.jpeg) 20 stretch; */
+
+    }
+    #image2{
+      border: 10px solid transparent;
+      padding: 15px;
+      border-image: url(abc.jpeg) 30 round;
+    }
+    #images3{
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(abc.jpeg) 30 round;
+  border-image-slice:2%;
+}
+  </style>
+  </head>
+  <body>
+    <h1>The border-image Property</h1>
+    <h2>Orginal Image</h2>
+    <img src="abc.jpeg" alt="dummyimage">
+    <img src="abcd.jpeg" alt="dummy2image">
+    <img src="abcde.jpeg" alt="dummy3image">
+    <p id="image1">This will show stretch property of border-image </p>
+    <p id="image2">This will show round property of border-image</p>
+    <p id="images3">This will show border-image-slice: 10% property of
+      border-image</p>
+    <h1>CSS Image Reflection</h1>
+
+  </body>
+</html>
