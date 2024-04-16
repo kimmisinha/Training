@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Specifies how an <img> or <video> should be resized to fit its container -->
+
+    <style>
+      img {
+        width: 200px;
+        height: 300px;
+        object-fit: contain;
+        border: 3px solid red;
+      }
+      .fill {
+        object-fit: fill;
+      }
+      .contain {
+        object-fit: contain;
+      }
+      .cover {
+        object-fit: cover;
+      }
+      .scale-down {
+        object-fit: scale-down;
+      }
+      .none {
+        object-fit: none;
+      }
+      .Object-fit {
+        width: 200px;
+        height: 400px;
+        object-fit: none;
+        object-position: 5px 10%;
+        border: 5px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The object-fit Property</h1>
+
+    <h2>No object-fit:</h2>
+    <img
+      src="abcd.jpeg"
+      alt="image load soon"
+      style="width: 200px; height: 300px"
+    />
+
+    <h2>object-fit: fill (this is default):</h2>
+    <img
+      class="fill"
+      src="abcd.jpeg"
+      alt="image load soon"
+      style="width: 200px; height: 300px"
+    />
+
+    <h2>object-fit: contain:</h2>
+    <img
+      class="contain"
+      src="abcd.jpeg"
+      alt="image load soon"
+      style="width: 200px; height: 300px"
+    />
+
+    <h2>object-fit: cover:</h2>
+    <img
+      class="cover"
+      src="abcd.jpeg"
+      alt="image load soon"
+      style="width: 200px; height: 300px"
+    />
+
+    <h2>object-fit: scale-down:</h2>
+    <img
+      class="scale-down"
+      src="abcd.jpeg"
+      alt="image load soon"
+      style="width: 200px; height: 300px"
+    />
+
+    <h2>object-fit: none:</h2>
+    <img
+      class="none"
+      src="abcd.jpeg"
+      alt="image load soon"
+      style="width: 200px; height: 300px"
+    />
+
+    <!-- Specifies how an <img> or <video> should be positioned with x/y coordinates inside its "own content box" -->
+    <h2>object-fit</h2>
+    <img class="Object-fit" src="abcd.jpeg" alt="image load soon" />
+    
+  </body>
+</html>
