@@ -1,0 +1,14 @@
+.main-section {
+  width: 100%;
+  height: 1388px;
+  border: 2px solid red;
+}
+.section {
+  width: 1240px;
+  border: 5px solid green;
+  height: 1388px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
