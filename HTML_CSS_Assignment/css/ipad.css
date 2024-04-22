@@ -1,0 +1,98 @@
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) { 
+    .navbar-left {
+      border: 2px solid blue;
+    }
+    .nav-option-container {
+      display: none;
+    }
+    .hambuger {
+      display: block;
+      width: 32px;
+      padding: 5px;
+      background-color: rgb(185, 50, 50);
+      height: 28px;
+  
+    }
+    .hambugerbox{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+     border: 2px solid orange;
+     }
+     .mainfooter {
+      width: 100%;
+      height: 350px;
+      background-color: #415161;
+      border: 4px solid red;
+      align-items: center; /* Center vertically */
+      width: 100%;
+      background-color: #415161;
+      border: 4px solid red;
+    }
+  
+    .footergrid {
+      height: 260px;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      border: 3px solid blue;
+      text-align: center;
+    }
+    .inner-box.inner-box1 ul {
+      text-align: center;
+    }
+  
+    .inner-box.inner-box2 ul {
+      text-align: center;
+    }
+  
+    .inner-box.inner-box3 ul {
+      text-align: center;
+    }
+
+
+    .products-container {
+      display: grid;
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      gap: 10px 4px;
+    }
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+  /* height: 533px;
+  width: 386px; */
+}
+.product-image {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  position: relative;
+}
+.product-details > div {
+  background-color: #f1f1f1;
+  width: 100%;
+  margin: 0.1px;
+  text-align: center;
+  border: 3px solid rgb(225, 0, 255);
+  height: 22px;
+  line-height: 1px;
+  font-size: 13px;
+  line-height: 1.3em;
+  margin-top: 0.5em;
+  opacity: 0.6;
+  box-sizing: inherit;
+}
+.product-imge-hight {
+  /* height: 386px;
+  width: 386px; */
+  backface-visibility: hidden;
+  transition: filter 0.6s, opacity 0.6s, transform 0.6s;
+}
+.product-imge-hight:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+    
+}

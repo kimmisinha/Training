@@ -8,20 +8,11 @@
   justify-content: space-between;
   background-color: #f9f9f9;
 }
-
-.navbar-left {
-  border: 3px solid yellow;
-  /* width:331px */
-}
-.navbar-right {
-  /* width:1498px; */
-  border: 3px solid orange;
+.nav-option {
   display: flex;
   justify-content: space-between;
-  gap: 14px;
-}
-
-.nav-option {
+  color: red;
+  position: relative;
   cursor: pointer;
   box-sizing: border-box;
   padding-top: 34px;
@@ -32,13 +23,36 @@
   border: 1px solid black; /* Optional: Just to visualize the boxes */
   height: 101px; /* Optional: Set the height of the boxes */
   white-space: nowrap; /* Prevent text from wrapping */
-  /* overflow: hidden; Hide any overflow */
   text-overflow: ellipsis; /* Add ellipsis if text overflows */
   box-sizing: border-box;
-
   margin-left: 6px;
   margin-right: 6px;
 }
+
+.navbar-left {
+  border: 3px solid yellow;
+  /* width:331px */
+}
+.navbar-images{
+  width:140px;
+  height: 88px;
+  padding-top:20px;
+  border: 3px solid yellow;
+  padding-bottom: 10px;
+
+}
+.navbar-right {
+  /* width:1498px; */
+  border: 3px solid orange;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+.hambuger{
+  display: none;
+}
+
+
 .nav-option:hover {
   color: red;
 }
@@ -83,3 +97,18 @@
 /* .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 } */
+
+.cart-item{
+ background-color: red;
+ position:absolute;
+ border-radius: 50%;
+ height: 16px ;
+ width: 14px;
+ padding: 4px;
+ color: white;
+ font-size: 9px;
+ top: 20px;
+ right: -5px;
+
+}
+

@@ -1,0 +1,63 @@
+.sidebar{
+    /* width: 325px; */
+    width:300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    box-shadow: #67727d;
+    box-shadow: 2px 2px 2px #888888;
+    position: fixed;
+    left: -305px;
+    top:0px;
+    bottom: 0px;
+    z-index: 100;
+    background-color: white;
+    transition: left 0.3s ease; 
+}
+.sidebar.active {
+    left: 0; 
+}
+
+.cross {
+    align-self: flex-end;
+}
+.Product-categories {
+    color: rgb(103, 114, 125);
+    font-size: x-large;
+}
+
+.same {
+    color:#F2295B
+}
+
+.filter {
+    color: #FFFFFF;
+}
+
+.border {
+    border: 2px solid #67727d;
+    padding: 8.5px;
+    border-left: 0;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.price-container {
+    display: flex;
+ 
+}
+
+.flex-container >.price-container {
+  background-color: #f1f1f1;
+  margin: 60px;
+
+}
+.same{
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+#rangeValue {
+  color: red; /* Set the color of the text to red */
+}
