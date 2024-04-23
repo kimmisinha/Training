@@ -7,6 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="navbar.css" />
     <!-- font size -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap"
+      rel="stylesheet">
+
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -26,6 +32,8 @@
     <link rel="stylesheet" href="./mobile.css">
     <link rel="stylesheet" href="./ipad.css">
     <link rel="stylesheet" href="./sidebar.css">
+    <link rel="stylesheet" href="./sidebarright.css">
+    <link rel="stylesheet" href="./rightsidebar.css">
     <!-- js -->
 
   </head>
@@ -44,8 +52,8 @@
           <!-- navbar-right -->
           <div class="navbar-right">
             <div class="nav-option-container">
-              <div class="box">
-              </div>
+              <!-- <div class="box">
+              </div> -->
               <div class="nav-option">HOME</div>
               <div class="nav-option">ALL PRODUCTS</div>
               <div class="nav-option">T-SHIRTS</div>
@@ -63,18 +71,46 @@
                 </div>
                 <div></div>
               </div>
-              <div class="nav-option">
+              <div class="nav-option cart-button">
                 <i class="fa-solid fa-euro-sign "
                   style="margin-left:0px;height:28px;
               width:28px"></i>
                 <i class="fa-solid fa-bucket" style=height:28px; width:28px></i>
                 <!-- <i class="fa-regular fa-circle-dot" style="margin: top 24px;"></i> -->
                 <div class="cart-item">0</div>
+
+                <!-- left-sidebar -->
+                <div class="container-rightsidebar">
+                  <div class="shoppingcart">
+                    <div>Shopping Cart</div>
+                    <div class="rightsidebarcross"><i class="fa-solid fa-xmark"></i></div>
+                  </div>
+                  <hr class="custom-hr" />
+                  <div class="container">
+                    <p>No products in the cart.</p>
+                  </div>
+                  <div class="contuine-shopping">CONTUINE SHOPPING</div>
+                </div>
               </div>
             </div>
+
+            <!-- hambugerbox -->
             <div class="hambugerbox">
               <i class="fa-solid fa-bars hambuger"></i>
+              <!-- rightsidebar desgine -->
+         <div class="hamburger-rightsidebar hamcolor">
+          <div><i class="fa-solid fa-xmark left"></i></div>
+          <div class="hamburger-sidebar">
+            <div>Home</div>
+            <div>All Product</div>
+            <div>All Tshirt</div>
+            <div>About HDX</div>
+            <div>contact</div>
+            <div>Account</div>
+          </div>
             </div>
+        </div>
+
           </nav>
         </header>
 
@@ -82,20 +118,19 @@
         <main>
           <br />
           <br />
+          <!-- filter-button -->
           <div class="filter-container">
             <div class="left-filter">
               <button class="filter-btn"><i class="fa-solid fa-bars"></i>
                 FILTER
               </button>
-              <div class="product-count">Showing 1–9 of 11 results</div>
+              <div class="product-count">Showing all 5 results</div>
               <!-- sider of filter -->
               <div class="sidebar">
                 <i class="fa-solid fa-xmark cross"></i>
                 <h1 class="Product-categories">Product categories</h1>
                 <div class="sidebarbox">
-                  <!-- <li>Mugs</li>
-                <li>Tshirts</li>
-                <li>Uncategorized</li> -->
+
                   <div>Mugs</div>
                   <div>Tshirts</div>
                   <div>Uncategorized</div>
@@ -107,7 +142,9 @@
          <p id="rangeValue">100</p> -->
                 <div class="price-container">
                   <button class="filter-btn border">FILTER</button>
-                  <p class="filter-btn">Price: £10 — £40</p>
+                  <p class="filter-btn price">Price:bold
+                    <b>£10 — £40</b>
+                  </p>
                 </div>
 
               </div>
@@ -115,9 +152,7 @@
             </div>
             <div class="right-filter">
               <select name="orderby" class="orderby" aria-label="Shop order">
-                <option value="menu_order" selected="selected">
-                  Default sorting
-                </option>
+                <option value="menu_order" selected="selected">Default sorting</option>
                 <option value="popularity">Sort by popularity</option>
                 <option value="rating">Sort by average rating</option>
                 <option value="date">Sort by latest</option>
@@ -176,6 +211,7 @@
                     class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
                 <div style="font-weight: bold">£15.00</div>
               </div>
+
             </div>
             <div class="grid-item">
               <div class="product-image">
@@ -185,12 +221,14 @@
               </div>
               <div class="product-details">
                 <div>Tshirts</div>
-                <div style="font-weight: bold; cursor: pointer;">Father day
-                  coffee Mug</div>
+                <div style="font-weight: bold; cursor: pointer;">coffee Mug</div>
                 <div><i class="fa-regular fa-star"></i><i
                     class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
                     class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
                 <div style="font-weight: bold">£18.00</div>
+              </div>
+              <div class="sell-icon">
+                <p>Sale!</p>
               </div>
             </div>
             <div class="grid-item">
@@ -208,6 +246,10 @@
                     class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
                 <div style="font-weight: bold"><span>£<s>18.00</s></span> £15.00</div>
               </div>
+              <div class="sell-icon">
+                <p>Sale!</p>
+              </div>
+
             </div>
             <div class="grid-item">
               <div class="product-image">
@@ -225,6 +267,10 @@
                 <div style="font-weight: bold"><span>£<s>34.00</s></span> £27.00
                 </div>
               </div>
+              <div class="sell-icon">
+                <p>Sale!</p>
+              </div>
+
             </div>
             <div class="grid-item">
               <div class="product-image">
@@ -241,6 +287,10 @@
                     class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
                 <div style="font-weight: bold"><span>£<s>34.00</s></span> £27.00</div>
               </div>
+              <div class="sell-icon">
+                <p>Sale!</p>
+              </div>
+
             </div>
             <div class="grid-item">
               <div class="product-image">
@@ -259,6 +309,10 @@
                 </p>
               </div>
             </div>
+            <div class="sell-icon">
+              <p>Sale!</p>
+            </div>
+
           </div>
           <div class="grid-item">
             <div class="product-image">
@@ -275,7 +329,12 @@
                   class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
               <div style="font-weight: bold"><span>£<s>34.00</s></span> £32.00</div>
             </div>
+            <div class="sell-icon">
+              <p>Sale!</p>
+            </div>
+
           </div>
+
         </div>
 
         <div class="loadMore">
@@ -326,7 +385,7 @@
       <div class="footerdown">
         <!-- <div >Copyright © 2024 Custom Printing Pro</div>
     <div>Powered by Custom Printing Pro</div> -->
-        <div class="footerdownchild box1" style="padding-top: 5px;">Copyright ©
+        <div class="footerdownchild box1" style="padding-top: 0px;">Copyright ©
           2024 Custom Printing Pro</div>
         <div class="footerdownchild box2" style="padding-top: 7px;">Powered by
           Custom Printing Pro</div>

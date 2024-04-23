@@ -1,0 +1,1 @@
+// In JavaScript, an object is a data type that allows you to store key-value pairs

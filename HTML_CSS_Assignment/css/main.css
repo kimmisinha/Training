@@ -17,8 +17,8 @@ body {
 
 main {
   padding: 20px;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .filter-container {
@@ -33,6 +33,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color:#67727d
 }
 
 .filter-btn {
@@ -40,11 +41,15 @@ main {
   padding: 8.5px;
   border-left: 0;
   margin-right: 15px;
+  color: #67727d;
 }
 
 .orderby {
   padding: 8.5px;
   font-size: 17px;
+  border: none;
+  color: #67727d;
+  font-weight: 400;
 }
 
 .product-count {
@@ -52,6 +57,10 @@ main {
   padding-top: 4px;
   padding-bottom: 2px;
   /* border: 2px solid red; */
+  padding-top: 16px;
+  padding-left: 12px;
+  color: #67727d;
+
 }
 
 .products-container {
@@ -65,8 +74,26 @@ main {
   font-size: 30px;
   /* height: 533px;
   width: 386px; */
+  position: relative;
+ 
+  
 }
 
+.sell-icon {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color:rgb(244,65,109);
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top:-10px;
+  right: -10px;
+  font-size: 12px;
+  z-index: 5;
+  color: white;
+}
 .product-imge-hight {
   /* height: 386px;
   width: 386px;  */
@@ -108,7 +135,7 @@ main {
   display: block;
 }
 
-.product-details > div {
+.product-details > div{
   background-color: #f1f1f1;
   width: 100%;
   margin: 0.1px;
@@ -116,7 +143,7 @@ main {
   /* border: 3px solid rgb(225, 0, 255); */
   height: 22px;
   line-height: 1px;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.3em;
   margin-top: 0.5em;
   opacity: 0.6;
@@ -130,6 +157,8 @@ main {
   margin-top: 30px;
   margin-bottom: 20px;
   position: relative;
+  color: black;
+
 }
 
 .knowMoreButton {
@@ -166,4 +195,10 @@ main {
 .nav-option-container {
   display: flex;
   justify-content: space-between;
+}
+
+.Product-price {
+  font-weight: 500;
+  cursor: pointer;
+  color:black;
 }
