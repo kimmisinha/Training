@@ -27,15 +27,21 @@ rightToggleButton.addEventListener('click', rightToggleSidebar);
 rightCrossButton.addEventListener('click', rightToggleSidebar);
 
 
-//sidebar small screen 
-// Sidebar for small screens
-const leftSidebarscreen = document.querySelector('.hamburger-sidebar');
-const leftToggleButtonscreen = document.querySelector('.fa-solid.fa-bars.hambuger');
-const leftCrossButtonscreen = document.querySelector('.fa-solid.fa-xmark.left');
+///
+const menuSidebar = document.querySelector('.menu-item');
 
-function leftToggleSidebarScreen() {
-  leftSidebarscreen.classList.toggle('sidebarrightactive');
+function menuToggleSidebar(event) {
+  menuSidebar.classList.toggle('active');
+  //div button 
+  //button 
+  event.stopPropagation();
+   // Stop event propagation to prevent closing the sidebar when the cross button is clicked
 }
 
-leftToggleButtonscreen.addEventListener('click', leftToggleSidebarScreen);
-leftCrossButtonscreen.addEventListener('click', leftToggleSidebarScreen);
+const menuToggleButton = document.querySelector('.hambugerbox');
+const menuCrossButton = document.querySelector('.left');
+
+menuToggleButton.addEventListener('click', menuToggleSidebar);
+menuCrossButton.addEventListener('click', menuToggleSidebar);
+
+

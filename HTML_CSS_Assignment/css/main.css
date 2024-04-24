@@ -202,3 +202,37 @@ main {
   cursor: pointer;
   color:black;
 }
+
+.menu-item {
+  width: 300px;
+  height: 100vh;
+  box-shadow: 2px 2px 2px #888888;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: start;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: -305px;
+  z-index: 112;
+  transition: right 0.3s ease;
+}
+/* .hamburger-rightsidebar,
+.hamburger-sidebar {
+  width: 300px;
+  height: 100vh;
+  box-shadow: 2px 2px 2px #888888;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border: 2px solid orange; 
+ position: fixed;
+  right: -550px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 100;
+  background-color: white;
+  padding-left: 20px;
+  transition: right 0.3s ease;
+} */

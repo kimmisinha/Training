@@ -14,7 +14,7 @@
     display: block;
     width: 38px;
     padding: 5px;
-    background-color:#f2295b;
+    background-color: #f2295b;
     height: 40px;
     color: white;
     text-align: center;
@@ -155,7 +155,7 @@
     width: 100%;
     margin-top: 20px;
     /* border: 3px solid hsl(197, 100%, 50%); */
-    background-color: rgb(245,245,245);
+    background-color: rgb(245, 245, 245);
   }
 
   .footerdownchild {
@@ -171,8 +171,9 @@
 
   }
 .box2{
-padding-top: 8px;
-}
+    padding-top: 8px;
+  }
+
   .knowMoreButton {
     position: absolute;
     top: 50%;
@@ -201,6 +202,7 @@ padding-top: 8px;
     margin-bottom: 20px;
     margin-top: 40px;
   }
+
   .orderby {
     padding: 8.5px;
     font-size: 17px;
@@ -208,11 +210,13 @@ padding-top: 8px;
     color: #67727d;
     font-weight: 400;
   }
-  .loadMore{
+
+  .loadMore {
     margin-top: 85px;
   }
-  .right-filter{
+
+  .right-filter {
     margin-top: 20px;
   }
- 
+
 }
