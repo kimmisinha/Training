@@ -1,4 +1,4 @@
-@media only screen and (min-device-width: 360px) and (max-width: 1024px) {
+@media only screen and (min-device-width: 360px) and (max-width: 767px) {
 
   .menu-item {
     width: 300px;
