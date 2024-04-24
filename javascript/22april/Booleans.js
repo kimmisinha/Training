@@ -47,3 +47,5 @@ console.log(num1 === num2); // false
 
 // Not equal to
 console.log(num1 !== num2); // true
+
+
