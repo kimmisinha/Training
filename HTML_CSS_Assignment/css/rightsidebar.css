@@ -1,4 +1,4 @@
-@media only screen and (min-device-width: 360px) and (max-width: 767px) {
+@media only screen and (min-device-width: 360px) and (max-width: 1024px) {
 
   .menu-item {
     width: 300px;
@@ -43,6 +43,10 @@
   }
   .button {
     width: 20px;
+  }
+  .boxremove{
+    border:none;
+    background-color: transparent;
   }
   
 }
