@@ -28,15 +28,15 @@
   padding-bottom: 15px;
   padding-top: 15px;
   font-family: Barlow, sans-serif;
-   font-size: 17px;
-   font-weight: 400;
+  font-size: 17px;
+  font-weight: 400;
 }
 
 .container {
   width: 500px;
   height: 90%;
   display: flex;
-  color:#67727d;
+  color: #67727d;
   justify-content: center;
   align-items: center;
   font-family: Barlow, sans-serif;
@@ -44,10 +44,12 @@
   font-weight: 500;
 }
 
-.contuine-shopping  {
-  border-top: 1px solid #67727d; 
-  border-bottom: 1px solid #67727d;;
-  border-right: 1px solid #67727d;;
+.contuine-shopping {
+  border-top: 1px solid #67727d;
+  border-bottom: 1px solid #67727d;
+  ;
+  border-right: 1px solid #67727d;
+  ;
   /* border: 2px solid red; */
   text-align: center;
   padding: 13px;

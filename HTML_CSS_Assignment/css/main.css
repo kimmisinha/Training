@@ -33,7 +33,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color:#67727d
+  color: #67727d;
 }
 
 .filter-btn {
@@ -60,7 +60,6 @@ main {
   padding-top: 16px;
   padding-left: 12px;
   color: #67727d;
-
 }
 
 .products-container {
@@ -75,20 +74,18 @@ main {
   /* height: 533px;
   width: 386px; */
   position: relative;
- 
-  
 }
 
 .sell-icon {
   height: 35px;
   width: 35px;
   border-radius: 50%;
-  background-color:rgb(244,65,109);
-  position:absolute;
+  background-color: rgb(244, 65, 109);
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  top:-10px;
+  top: -10px;
   right: -10px;
   font-size: 12px;
   z-index: 5;
@@ -135,7 +132,7 @@ main {
   display: block;
 }
 
-.product-details > div{
+.product-details > div {
   background-color: #f1f1f1;
   width: 100%;
   margin: 0.1px;
@@ -158,7 +155,6 @@ main {
   margin-bottom: 20px;
   position: relative;
   color: black;
-
 }
 
 .knowMoreButton {
@@ -200,7 +196,7 @@ main {
 .Product-price {
   font-weight: 500;
   cursor: pointer;
-  color:black;
+  color: black;
 }
 
 .menu-item {

@@ -1,5 +1,4 @@
 @media only screen and (min-device-width: 360px) and (max-width: 1024px) {
-
   .menu-item {
     width: 300px;
     height: 100vh;
@@ -16,9 +15,9 @@
     transition: right 0.3s ease;
   }
   .menu-item.active {
-  right: 0;
+    right: 0;
   }
-  
+
   .menu-content {
     width: 300px;
     font-size: 8px;
@@ -44,9 +43,8 @@
   .button {
     width: 20px;
   }
-  .boxremove{
-    border:none;
+  .boxremove {
+    border: none;
     background-color: transparent;
   }
-  
 }

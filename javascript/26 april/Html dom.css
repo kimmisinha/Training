@@ -1,4 +1,4 @@
-.cutom-button{
+.cutom-button {
   text-align: center;
   font: 16px;
   background-color: aqua;
@@ -9,15 +9,12 @@
   padding: 40px;
   font-size: large;
   font-weight: 600;
-  
 }
 
-
-.container{
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw; /* Full width of viewport */
   height: 100vh; /* Full height of viewport */
-
 }

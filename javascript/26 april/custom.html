@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Custom Event Example</title>
-</head>
-<body>
+  </head>
+  <body>
     <button id="myButton">Click Me</button>
 
     <script>
-        // Create a custom event
-        const customEvent = new CustomEvent('myCustomEvent', {
-            detail: { message: 'Custom event data' }
-        });
+      // Create a custom event
+      const customEvent = new CustomEvent("myCustomEvent", {
+        detail: { message: "Custom event data" },
+      });
 
-        // Dispatch the custom event when the button is clicked
-        const button = document.getElementById('myButton');
-        button.addEventListener('click', () => {
-            // button.dispatchEvent(customEvent);
-            var button = document.getElementById("myButton");
-button.style.backgroundColor = "red";
+      // Dispatch the custom event when the button is clicked
+      const button = document.getElementById("myButton");
+      button.addEventListener("click", () => {
+        // button.dispatchEvent(customEvent);
+        var button = document.getElementById("myButton");
+        button.style.backgroundColor = "red";
+      });
 
-        });
-
-        // Listen for the custom event and log the message
-        button.addEventListener('myCustomEvent', event => {
-            console.log('Custom event triggered:', event.detail.message);
-        });
+      // Listen for the custom event and log the message
+      button.addEventListener("myCustomEvent", (event) => {
+        console.log("Custom event triggered:", event.detail.message);
+      });
     </script>
-</body>
+  </body>
 </html>

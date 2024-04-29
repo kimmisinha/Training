@@ -168,9 +168,8 @@
     padding-top: 20px;
     color: #5e5e5e;
     font-size: 14px;
-
   }
-.box2{
+  .box2 {
     padding-top: 8px;
   }
 
@@ -218,5 +217,4 @@
   .right-filter {
     margin-top: 20px;
   }
-
 }

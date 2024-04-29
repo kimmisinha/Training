@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      body{
+      body {
         font-family: Arial, sans-serif;
-        background-color:#f2f2f2;
+        background-color: #f2f2f2;
         margin: 0;
         padding: 0;
-
       }
+
       .box {
         background-color: #f2f2f2;
         height: 600px;
@@ -20,26 +20,29 @@
         border-radius: 10px;
         margin-top: 100px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+      }
 
+      .box label {
+        display: block;
+        margin-bottom: 4px;
+        margin-left: 120px;
       }
-      .box label{
-         display: block;
-         margin-bottom: 4px;
-         margin-left: 120px;
-      }
-      .box input, select  {
-        width:100px;
+
+      .box input,
+      select {
+        width: 100px;
         padding: 3px;
-        margin-bottom:8px;
+        margin-bottom: 8px;
         border: 1px solid #ccc;
         margin-left: 120px;
         border-radius: 5px;
+      }
 
+      .box #submit {
+        margin-left: 120px;
       }
-     .box #submit{
-        margin-left:120px;
-      }
-      .box input[type="submit"]{
+
+      .box input[type="submit"] {
         cursor: pointer;
         border: none;
         border-radius: 5px;
@@ -47,27 +50,23 @@
         color: #3d8bd0;
         margin-left: 120px;
         border-radius: 5px;
-
-
-
       }
-      .box input[type="submit"]:hover{
+
+      .box input[type="submit"]:hover {
         background-color: hsl(329, 100%, 50%);
-        border:1px solid burlywood;
+        border: 1px solid burlywood;
         border-radius: 1px;
         margin-left: 120px;
         border-radius: 5px;
-
-        
       }
+
       .box input[type="passwords"],
-      .box input[type="confirmpassword"]{
+      .box input[type="confirmpassword"] {
         margin-left: 120px;
-
       }
-
     </style>
   </head>
+
   <body>
     <div class="box">
       <label for="fname">First name:</label>
@@ -76,14 +75,16 @@
         id="fname"
         name="fname"
         placeholder="fname"
-        required /><br />
+        required
+      /><br />
       <label for="lname">Last name:</label>
       <input
         type="text"
         name="lname"
         id="lname"
         placeholder="lname"
-        required /><br />
+        required
+      /><br />
 
       <label for="passwords">Password:</label>
       <input
@@ -91,7 +92,8 @@
         name="passwords"
         id="password"
         placeholder="password"
-        required /><br />
+        required
+      /><br />
 
       <label for="confirmpassword">confirmpassword:</label>
       <input
@@ -99,35 +101,40 @@
         name="confirmpassword"
         id="confirmpassword"
         placeholder="confirmpassword"
-        required /><br />
+        required
+      /><br />
       <label for="street">Street Address:</label>
       <input
         type="text"
         name="street"
         id="street"
         placeholder="Enter Street address"
-        required /><br />
+        required
+      /><br />
       <label for="city">City:</label>
       <input
         type="text"
         id="city"
         name="city"
         placeholder="Enter city"
-        required /><br /><br />
+        required
+      /><br /><br />
       <label for="state">State:</label>
       <input
         type="text"
         id="state"
         name="state"
         placeholder="Enter state"
-        required /><br /><br />
+        required
+      /><br /><br />
       <label for="zip">Zip Code:</label>
       <input
         type="text"
         id="zip"
         name="zip"
         placeholder="Enter zip code"
-        required /><br /><br />
+        required
+      /><br /><br />
       <label for="country">Country:</label>
       <select name="country" id="country" name="country">
         <option value="USA">United States</option>
