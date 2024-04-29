@@ -9,12 +9,13 @@ console.log(obj["roll]"]);
 obj.section = "b";
 obj["subject"] = "math";
 
-// Objects can contain functions as
-// properties. These functions are called
-// methods and can perform actions or
-// computations related to the object's data.
+/*Objects can contain functions as
+properties. These functions are called
+methods and can perform actions or
+computations related to the object's data.
 
-// Methods in JavaScript objects are functions that are defined as properties of an object.
+Methods in JavaScript objects are functions that are defined as properties of an object.
+*/
 
 // Define an object representing a person
 const person = {

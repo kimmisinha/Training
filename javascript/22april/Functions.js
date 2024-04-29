@@ -1,7 +1,7 @@
 // Functions and arrow functions, callback functions
 // Regular Function:
-// In regular functions, the value of this is determined 
-// dynamically at runtime based on how the function is called or executed.
+/*In regular functions, the value of this is determined 
+dynamically at runtime based on how the function is called or executed.*/
 
 function abc(a){
   return a
@@ -22,9 +22,10 @@ obj.method(); // Output: { method: [Function: regularFunction] }
 
 // Case 2: Calling the function in the global scope
 regularFunction(); // Output: global object (e.g., Window in the browser, global in Node.js)
-// Arrow functions capture the this value
-//  from the surrounding lexical context at 
-//  the time of their creation. They do not have their own this context.
+
+/*Arrow functions capture the this value
+ from the surrounding lexical context at 
+ the time of their creation. They do not have their own this context.*/
 
 
 let result=(a)=>a
