@@ -1,24 +1,21 @@
-h3{
-  background-color:rgb(255, 240, 247);
+h3 {
+  background-color: rgb(255, 240, 247);
   font-family: Arial, Helvetica, sans-serif;
   border: 2px solid rgb(13, 13, 12);
   padding: 20px;
   margin: 4%;
 }
-h4{
+h4 {
   background-color: bisque;
   text-align: center;
   height: auto;
-
-  
 }
-#one{
+#one {
   color: rgb(255, 240, 247);
 }
-#hex{
+#hex {
   background-color: 0000ff;
 }
-#HSL{
-  background-color:hsl(0, 100%, 50%)
-
+#HSL {
+  background-color: hsl(0, 100%, 50%);
 }

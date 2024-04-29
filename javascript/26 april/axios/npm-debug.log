@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/apple/.nvm/versions/node/v6.6.0/bin/node',
+1 verbose cli   '/Users/apple/.nvm/versions/node/v6.6.0/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   'axios' ]
+2 info using npm@3.10.3
+3 info using node@v6.6.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData axios
+8 silly fetchNamedPackageData axios
+9 silly mapToRegistry name axios
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'axios',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'axios',
+12 silly mapToRegistry   name: 'axios',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/axios
+14 verbose request uri https://registry.npmjs.org/axios
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 2:40:06 PM
+17 verbose request id 028ebb5bc9627c63
+18 verbose etag W/"87073f0e05d22f6ac58ca7d293728603"
+19 verbose lastModified Thu, 28 Mar 2024 17:37:35 GMT
+20 http request GET https://registry.npmjs.org/axios
+21 http 304 https://registry.npmjs.org/axios
+22 verbose headers { date: 'Fri, 26 Apr 2024 09:10:06 GMT',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'cf-ray': '87a570132b2af296-BOM',
+22 verbose headers   'cf-cache-status': 'HIT',
+22 verbose headers   age: '10',
+22 verbose headers   'cache-control': 'public, max-age=300',
+22 verbose headers   etag: '"87073f0e05d22f6ac58ca7d293728603"',
+22 verbose headers   'last-modified': 'Thu, 28 Mar 2024 17:37:35 GMT',
+22 verbose headers   vary: 'Accept-Encoding',
+22 verbose headers   server: 'cloudflare' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Fri, 26 Apr 2024 09:10:06 GMT',
+23 silly get     connection: 'keep-alive',
+23 silly get     'cf-ray': '87a570132b2af296-BOM',
+23 silly get     'cf-cache-status': 'HIT',
+23 silly get     age: '10',
+23 silly get     'cache-control': 'public, max-age=300',
+23 silly get     etag: '"87073f0e05d22f6ac58ca7d293728603"',
+23 silly get     'last-modified': 'Thu, 28 Mar 2024 17:37:35 GMT',
+23 silly get     vary: 'Accept-Encoding',
+23 silly get     server: 'cloudflare' } ]
+24 verbose etag https://registry.npmjs.org/axios from cache
+25 verbose get saving axios to /Users/apple/.npm/registry.npmjs.org/axios/.cache.json
+26 verbose correctMkdir /Users/apple/.npm correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly rollbackFailedOptional Starting
+40 silly rollbackFailedOptional Finishing
+41 silly runTopLevelLifecycles Starting
+42 silly runTopLevelLifecycles Finishing
+43 silly install printInstalled
+44 verbose stack Error: Refusing to install axios as a dependency of itself
+44 verbose stack     at checkSelf (/Users/apple/.nvm/versions/node/v6.6.0/lib/node_modules/npm/lib/install/validate-args.js:53:14)
+44 verbose stack     at Array.<anonymous> (/Users/apple/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+44 verbose stack     at LOOP (/Users/apple/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+44 verbose stack     at chain (/Users/apple/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+44 verbose stack     at /Users/apple/.nvm/versions/node/v6.6.0/lib/node_modules/npm/lib/install/validate-args.js:16:5
+44 verbose stack     at /Users/apple/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+44 verbose stack     at Array.forEach (native)
+44 verbose stack     at /Users/apple/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+44 verbose stack     at Array.forEach (native)
+44 verbose stack     at asyncMap (/Users/apple/.nvm/versions/node/v6.6.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+45 verbose cwd /Users/apple/Desktop/training/javascript/26 april/axios
+46 error Darwin 21.1.0
+47 error argv "/Users/apple/.nvm/versions/node/v6.6.0/bin/node" "/Users/apple/.nvm/versions/node/v6.6.0/bin/npm" "i" "axios"
+48 error node v6.6.0
+49 error npm  v3.10.3
+50 error code ENOSELF
+51 error Refusing to install axios as a dependency of itself
+52 error If you need help, you may report this error at:
+52 error     <https://github.com/npm/npm/issues>
+53 verbose exit [ 1, true ]

@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<style>
-  /* The specificity of this selector is 1  */
-  h1 {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* The specificity of this selector is 1  */
+    h1 {
       color: #00ffff;
-  }
+    }
 
-  /* The specificity of this selector is 10  */
-  .cpurple {
+    /* The specificity of this selector is 10  */
+    .cpurple {
       color: #800080;
-  }
+    }
 
-  /* The specificity of this selector is 1 + 10 = 11  */
-  h1.yellow {
+    /* The specificity of this selector is 1 + 10 = 11  */
+    h1.yellow {
       color: #ffff00;
-  }
+    }
 
-  /* This is an example of attribute selector. The specificity of this selector is 10 */
-  [data-x=a] {
+    /* This is an example of attribute selector. The specificity of this selector is 10 */
+    [data-x="a"] {
       color: #800000;
-  }
+    }
 
-  /* The specificity of this selector is 10  */
-  .cred {
+    /* The specificity of this selector is 10  */
+    .cred {
       color: #ff0000 !important;
-  }
+    }
 
-  /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
-  a.harryclass.rohan-class[href]:hover {
+    /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
+    a.harryclass.rohan-class[href]:hover {
       color: #8a2be2;
-  }
-</style><body>
- <div>
-  <h1 class="yellow cred cpurple" data-x="a"> css specificity</h1>
- </div>
-
-</body>
+    }
+  </style>
+  <body>
+    <div>
+      <h1 class="yellow cred cpurple" data-x="a">css specificity</h1>
+    </div>
+  </body>
 </html>
 
 <!-- if we have same class css will apply topmost 

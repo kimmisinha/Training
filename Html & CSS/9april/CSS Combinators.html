@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      p {
-        text-align: center;
-        font-size: large;
-        color: #960808;
-        font-size: 10px;
-      }
-      /* Descendant Selector */
-      div p {
-        color: #0ea93c;
-        font-size: 20px;
-        font-family: "Times New Roman", Times, serif;
-        background-color: hsl(300, 90%, 31%);
-      }
-      /* Child Selector (>) */
 
-      div > p {
-        background-color: greenyellow;
-        font-size: x-small;
-      }
-      /* Adjacent Sibling Selector (+) */
-      div + p {
-        font-style: italic;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    p {
+      text-align: center;
+      font-size: large;
+      color: #960808;
+      font-size: 10px;
+    }
 
-      /* General Sibling Selector (~) */
-      div ~ p {
-        font-family: "Brush Script MT", cursive;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- A combinator is something that explains the relationship between the selectors. -->
-    <div>
-      <p>I am div one</p>
-      <p>I am div two</p>
-      <span><p>I am div eight</p></span>
-      <strong>I am div nine</strong>
-      <section>
-        <!-- not Child but Descendant -->
-        <p>I am div three</p>
-        <p>I am div four</p>
-      </section>
-      <p>I am div five</p>
-    </div>
-    <p>I am div six</p>
-    <p>I am div seven</p>
-    <div>
-      <p>I am div eleven</p>
-      <p>I am div twelve</p>
-      <p>I am div thretten</p>
-    </div>
-    <p>I am div foutheen</p>
-    <p>I am div fiften</p>
-  </body>
+    /* Descendant Selector */
+    div p {
+      color: #0ea93c;
+      font-size: 20px;
+      font-family: "Times New Roman", Times, serif;
+      background-color: hsl(300, 90%, 31%);
+    }
+
+    /* Child Selector (>) */
+
+    div>p {
+      background-color: greenyellow;
+      font-size: x-small;
+    }
+
+    /* Adjacent Sibling Selector (+) */
+    div+p {
+      font-style: italic;
+    }
+
+    /* General Sibling Selector (~) */
+    div~p {
+      font-family: "Brush Script MT", cursive;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- A combinator is something that explains the relationship between the selectors. -->
+  <div>
+    <p>I am div one</p>
+    <p>I am div two</p>
+    <span>
+      <p>I am div eight</p>
+    </span>
+    <strong>I am div nine</strong>
+    <section>
+      <!-- not Child but Descendant -->
+      <p>I am div three</p>
+      <p>I am div four</p>
+    </section>
+    <p>I am div five</p>
+  </div>
+  <p>I am div six</p>
+  <p>I am div seven</p>
+  <div>
+    <p>I am div eleven</p>
+    <p>I am div twelve</p>
+    <p>I am div thretten</p>
+  </div>
+  <p>I am div foutheen</p>
+  <p>I am div fiften</p>
+</body>
+
 </html>
