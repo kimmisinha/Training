@@ -13,10 +13,10 @@ This method creates a shallow copy, meaning nested objects or arrays will still 
 references to the original objects or arrays.
 */
 const originalArray = [1, 2, 3];
-console.log("originalArray",originalArray)
-const copiedArray = [...originalArray]; 
+console.log("originalArray", originalArray)
+const copiedArray = [...originalArray];
 copiedArray.push("89")
-console.log("copiedArray",copiedArray)
+console.log("copiedArray", copiedArray)
 
 // Using Object.assign():
 
@@ -25,10 +25,18 @@ The Object.assign() method is used to copy the values of all enumerable own prop
  more source objects to a target object. This method also creates a shallow copy.
 */
 const originalObject = { a: 1, b: 2 };
-const copiedObject = Object.assign({}, originalObject); 
-copiedObject.c=6;
-console.log("originalObject",originalObject);
-console.log("copiedObject",copiedObject)
+const copiedObject = Object.assign({}, originalObject);
+copiedObject.c = 6;
+console.log("originalObject", originalObject);
+console.log("copiedObject", copiedObject)
+
+/*
+Both these methods create shallow copies. They only copy the top-level 
+properties of the original object or array. If the object or array contains 
+nested objects or arrays, those nested structures will still be references to 
+the original objects or arrays. So, modifying a nested object in the copied 
+structure will affect the original object.
+*/
 
 // Using JSON.parse() and JSON.stringify():
 /*
@@ -37,9 +45,20 @@ it back into a new object.This method creates a deep copy, but it has limitation
   (e.g., functions are not preserved, cannot copy circular references).
   */
 
-  const originalObject_2 = { a: 1, b: 2 };
-const copiedObject_2 = JSON.parse(JSON.stringify(originalObject_2)); 
-copiedObject_2.c=90
-console.log("originalObject_2",originalObject_2);
-console.log("copiedObject_2",copiedObject_2)
+/*
+This method involves serializing the entire object
+ structure into a JSON string and then parsing it back into a new object. 
+ It creates a deep copy because it essentially creates a completely new object
+ structure in memory. However, there are some limitations and drawbacks to this
+ method:
+
+
+*/
+
+const originalObject_2 = { a: 1, b: 2 };
+const copiedObject_2 = JSON.parse(JSON.stringify(originalObject_2));
+copiedObject_2.c = 90
+console.log("originalObject_2", originalObject_2);
+console.log("copiedObject_2", copiedObject_2)
+
 
