@@ -1,0 +1,72 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: rgb(244, 118, 139);
+
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 10px 2px 4px rgba(143, 22, 147, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="username"],
+input[type="password"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+
+.submit {
+  width: 50%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 90px;
+  transition: background-color 0.3s;
+}
+.submit:hover {
+  background-color: rgb(112, 41, 41);
+}
+.left-margin {
+  padding-left: 130px;
+  padding-bottom: 50px;
+  font-size: larger;
+  font-weight: 500;
+  margin-top: 0px;
+}  
+#response_submit {
+    margin-top: 420px; 
+    /* Add some top margin to move it below the form */
+    padding: 10px;
+    border-radius: 4px;
+    color: #333;
+    font-size: 16px;
+    /* border:5px solid red; */
+    margin-left: -400px;
+    height: 30px;
+    width: 360px;
+  }
+  

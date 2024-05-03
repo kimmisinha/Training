@@ -13,10 +13,10 @@ This method creates a shallow copy, meaning nested objects or arrays will still 
 references to the original objects or arrays.
 */
 const originalArray = [1, 2, 3];
-console.log("originalArray", originalArray)
+console.log("originalArray", originalArray);
 const copiedArray = [...originalArray];
-copiedArray.push("89")
-console.log("copiedArray", copiedArray)
+copiedArray.push("89");
+console.log("copiedArray", copiedArray);
 
 // Using Object.assign():
 
@@ -28,7 +28,7 @@ const originalObject = { a: 1, b: 2 };
 const copiedObject = Object.assign({}, originalObject);
 copiedObject.c = 6;
 console.log("originalObject", originalObject);
-console.log("copiedObject", copiedObject)
+console.log("copiedObject", copiedObject);
 
 /*
 Both these methods create shallow copies. They only copy the top-level 
@@ -57,8 +57,34 @@ This method involves serializing the entire object
 
 const originalObject_2 = { a: 1, b: 2 };
 const copiedObject_2 = JSON.parse(JSON.stringify(originalObject_2));
-copiedObject_2.c = 90
+copiedObject_2.c = 90;
 console.log("originalObject_2", originalObject_2);
-console.log("copiedObject_2", copiedObject_2)
+console.log("copiedObject_2", copiedObject_2);
 
+const Object_coppy = {
+  name: "kimmi",
+  roll: 9,
+  class: "a",
+  family_details: {
+    father_name: "mohit",
+    mother_name: "anjali",
+    brother_name: "sohan",
+    education_details: {
+      class_12_perc: 67,
+      class_10_perc: 90,
+    },
+  },
+};
 
+var spreadoperator_coppy={...Object_coppy};
+spreadoperator_coppy.family_details.education_details.father_inlaw_name="Rohit"
+console.log(spreadoperator_coppy)
+
+const copiedObj = Object.assign({}, Object_coppy);
+copiedObj.family_details.education_details.mother_inlaw_name="Rita"
+console.log(copiedObj);
+
+const json_method=JSON.parse(JSON.stringify(Object_coppy));
+json_method.family_details.education_details.graduation_marks=89;
+console.log("obj copy: " ,Object_coppy)
+console.log(json_method);
