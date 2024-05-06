@@ -1,3 +1,64 @@
+// <!-- navbar-right -->
+
+navOptionContainer = document.querySelector('.nav-option-container');
+let navoptiondropdown = document.querySelector('.dropdown');
+let navoptioncartbutton = document.querySelector('.cart-button');
+navOptionContainer.innerHTML = ""
+//box
+let navOption = document.createElement('div');
+navOption.classList.add('box');
+navOption.textContent = "";
+navOptionContainer.appendChild(navOption);
+
+//HOME
+navOption = document.createElement('div');
+navOption.classList.add('nav-option');
+navOption.textContent = 'HOME';
+navOptionContainer.appendChild(navOption);
+
+
+//ALL PRODUCTS
+navOption = document.createElement('div');
+navOption.classList.add('nav-option');
+navOption.textContent = 'ALL PRODUCTS';
+navOptionContainer.appendChild(navOption);
+
+
+
+//T-SHIRTS
+navOption = document.createElement('div');
+navOption.classList.add('nav-option');
+navOption.textContent = 'T-SHIRTS';
+navOptionContainer.appendChild(navOption);
+
+
+
+//MUGS
+navOption = document.createElement('div');
+navOption.classList.add('nav-option');
+navOption.textContent = 'MUGS';
+navOptionContainer.appendChild(navOption);
+
+//ABOUT HDX
+navOption = document.createElement('div');
+navOption.classList.add('nav-option');
+navOption.textContent = 'ABOUT HDX';
+navOptionContainer.appendChild(navOption);
+
+
+
+//CONTACT
+
+navOption = document.createElement('div');
+navOption.classList.add('nav-option');
+navOption.textContent = 'CONTACT';
+navOptionContainer.appendChild(navOption);
+
+
+//after all append 
+navOptionContainer.append(navoptiondropdown, navoptioncartbutton)
+//sidebar
+
 const leftSidebar = document.querySelector(".sidebar");
 
 function leftToggleSidebar() {
@@ -41,3 +102,14 @@ const menuCrossButton = document.querySelector(".left");
 
 menuToggleButton.addEventListener("click", menuToggleSidebar);
 menuCrossButton.addEventListener("click", menuToggleSidebar);
+
+
+
+// <!-- <div class="box">
+// </div> -->
+// <!-- <div class="nav-option">HOME</div>
+// <div class="nav-option">ALL PRODUCTS</div>
+// <div class="nav-option">T-SHIRTS</div>
+// <div class="nav-option">MUGS</div>
+// <div class="nav-option">ABOUT HDX</div>
+// <div class="nav-option">CONTACT</div> -->

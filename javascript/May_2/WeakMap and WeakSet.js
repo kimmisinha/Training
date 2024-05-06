@@ -1,0 +1,4 @@
+/*
+WeakMap is a special type of Map where keys must be objects and the values can 
+be arbitrary.
+*/

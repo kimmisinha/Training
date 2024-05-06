@@ -91,6 +91,7 @@ main {
   z-index: 5;
   color: white;
 }
+
 .product-imge-hight {
   /* height: 386px;
   width: 386px;  */
@@ -132,7 +133,7 @@ main {
   display: block;
 }
 
-.product-details > div {
+.product-details>div {
   background-color: #f1f1f1;
   width: 100%;
   margin: 0.1px;
@@ -214,6 +215,7 @@ main {
   z-index: 112;
   transition: right 0.3s ease;
 }
+
 /* .hamburger-rightsidebar,
 .hamburger-sidebar {
   width: 300px;
