@@ -3,7 +3,7 @@
 navOptionContainer = document.querySelector('.nav-option-container');
 let navoptiondropdown = document.querySelector('.dropdown');
 let navoptioncartbutton = document.querySelector('.cart-button');
-navOptionContainer.innerHTML = ""
+// navOptionContainer.innerHTML = ""
 //box
 let navOption = document.createElement('div');
 navOption.classList.add('box');
@@ -16,22 +16,17 @@ navOption.classList.add('nav-option');
 navOption.textContent = 'HOME';
 navOptionContainer.appendChild(navOption);
 
-
 //ALL PRODUCTS
 navOption = document.createElement('div');
 navOption.classList.add('nav-option');
 navOption.textContent = 'ALL PRODUCTS';
 navOptionContainer.appendChild(navOption);
 
-
-
 //T-SHIRTS
 navOption = document.createElement('div');
 navOption.classList.add('nav-option');
 navOption.textContent = 'T-SHIRTS';
 navOptionContainer.appendChild(navOption);
-
-
 
 //MUGS
 navOption = document.createElement('div');
@@ -45,19 +40,16 @@ navOption.classList.add('nav-option');
 navOption.textContent = 'ABOUT HDX';
 navOptionContainer.appendChild(navOption);
 
-
-
 //CONTACT
-
 navOption = document.createElement('div');
 navOption.classList.add('nav-option');
 navOption.textContent = 'CONTACT';
 navOptionContainer.appendChild(navOption);
 
-
 //after all append 
 navOptionContainer.append(navoptiondropdown, navoptioncartbutton)
-//sidebar
+
+/*-------------------------------------sidebar--------------------------------*/
 
 const leftSidebar = document.querySelector(".sidebar");
 

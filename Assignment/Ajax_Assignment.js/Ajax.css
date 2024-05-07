@@ -47,26 +47,28 @@ input[type="password"] {
   margin-left: 90px;
   transition: background-color 0.3s;
 }
+
 .submit:hover {
   background-color: rgb(112, 41, 41);
 }
+
 .left-margin {
   padding-left: 130px;
   padding-bottom: 50px;
   font-size: larger;
   font-weight: 500;
   margin-top: 0px;
-}  
+}
+
 #response_submit {
-    margin-top: 420px; 
-    /* Add some top margin to move it below the form */
-    padding: 10px;
-    border-radius: 4px;
-    color: #333;
-    font-size: 16px;
-    /* border:5px solid red; */
-    margin-left: -400px;
-    height: 30px;
-    width: 360px;
-  }
-  
+  margin-top: 420px;
+  /* Add some top margin to move it below the form */
+  padding: 10px;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  /* border:5px solid red; */
+  margin-left: -400px;
+  height: 30px;
+  width: 360px;
+}

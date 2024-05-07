@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+    const student = {
+        name: "kimmi",
+        marks: 78,
+        details: function () {
+            console.log(`my name is sona and my marks is ${this.marks} is`)
+        }
+
+    }
+
+    function abc() {
+        console.log(`my name is ${this.name} and my marks is ${this.marks} is`)
+    }
+
+    student.__proto__ = abc
+
+    // constrctor is used at time of creation of object kuch proprty or value set karna h 
+    //we use constructor
+
+    class cardlist {
+        constructor(brand, milage) {
+            this.brand = brand;
+            this.milage = milage
+        }
+        black() {
+            console.log('color of this car is black')
+        }
+        white() {
+            console.log('color of this car is white')
+        }
+        green() {
+            console.log('color of thid car is green')
+        }
+        carsize(size) {
+            this.size = size;
+        }
+    }
+
+    let car_1 = new cardlist("tota", "78");
+    // car_1.carsize=9
+    console.log(car_1)
+</script>
+
+</html>

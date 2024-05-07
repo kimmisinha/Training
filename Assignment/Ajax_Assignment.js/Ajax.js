@@ -18,9 +18,8 @@ Inputform.addEventListener("submit", function (e) {
       alert(
         `Login successful username: ${username} and  password:${password} "Token": ${response.token}`
       );
-      response_submit.textContent = `Login successful!`;document.body.style.backgroundColor = "#f0f0f0"; // Set background color
+      response_submit.textContent = `Login successful!`; document.body.style.backgroundColor = "#f0f0f0"; // Set background color
       response_submit.style.backgroundColor = "#ff6347"; // Set background color
-
 
     } else {
       let error_message =
