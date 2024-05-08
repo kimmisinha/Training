@@ -1,102 +1,30 @@
 /*
 Problem Statement: 
-
 Convert given number into String-- 
-
-input: 15000;
+input: 15000; 
 output: Fifteen Thousand
 */
-
-
-
-/*
-Problem Statement: 
-
-Convert given number into String-- 
-
-input: 15000;
-output: Fifteen Thousand
-*/
-
 function numberToWords(num) {
-    const ones = [
-      "zero",
-      "one",
-      "two",
-      "three",
-      "four",
-      "five",
-      "six",
-      "seven",
-      "eight",
-      "nine",
-      "ten",
-      "eleven",
-      "twelve",
-      "thirteen",
-      "fourteen",
-      "fifteen",
-      "sixteen",
-      "seventeen",
-      "eighteen",
-      "nineteen",
-    ];
-    const tens = [
-      "",
-      "",
-      "twenty",
-      "thirty",
-      "forty",
-      "fifty",
-      "sixty",
-      "seventy",
-      "eighty",
-      "ninety",
-    ];
-  
-    if (num < 20) {
-      return ones[num];
-    }
-  
-    if (num < 100) {
-      const tensDigit = Math.floor(num / 10);
-      const onesDigit = num % 10;
-      return `${tens[tensDigit]}${onesDigit ? " " + ones[onesDigit] : ""}`;
-    }
-  
-    if (num < 1000) {
-      const hundredsDigit = Math.floor(num / 100);
-      const remainingNum = num % 100;
-      return `${ones[hundredsDigit]} hundred${
-        remainingNum ? " " + numberToWords(remainingNum) : ""
-      }`;
-    }
-  
-    if (num < 1000000) {
-      const thousandsDigit = Math.floor(num / 1000);
-      const remainingNum = num % 1000;
-      return `${numberToWords(thousandsDigit)} thousand${
-        remainingNum ? " " + numberToWords(remainingNum) : ""
-      }`;
-    }
-  
-    if (num < 1000000000) {
-      const millionsDigit = Math.floor(num / 1000000);
-      const remainingNum = num % 1000000;
-      return `${numberToWords(millionsDigit)} million${
-        remainingNum ? " " + numberToWords(remainingNum) : ""
-      }`;
-    }
-  
-    if (num < 1000000000000) {
-      const billionsDigit = Math.floor(num / 1000000000);
-      const remainingNum = num % 1000000000;
-      return `${numberToWords(billionsDigit)} billion${
-        remainingNum ? " " + numberToWords(remainingNum) : ""
-      }`;
-    }
-  
-    return "Number too large to convert to words";
+  if (num < 0) { //15000
+      return "Negative numbers are not supported";
   }
   
-  console.log(numberToWords(580));
+  const ones = [
+      "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", 
+      "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", 
+      "seventeen", "eighteen", "nineteen"
+  ];
+  const tens = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
+
+  if (num < 20) return ones[num]; //numberToWords(1)
+  if (num < 100) return `${tens[Math.floor(num / 10)]}${num % 10 ? " " + ones[num % 10] : ""}`;
+  if (num < 1000) return `${ones[Math.floor(num / 100)]} hundred${num % 100 ? " " + numberToWords(num % 100) : ""}`;
+  if (num < 1000000) return `${numberToWords(Math.floor(num / 1000))} thousand${num % 1000 ? " " + numberToWords(num % 1000) : ""}`;
+  if (num < 1000000000) return `${numberToWords(Math.floor(num / 1000000))} million${num % 1000000 ? " " + numberToWords(num % 1000000) : ""}`;
+  if (num < 1000000000000) return `${numberToWords(Math.floor(num / 1000000000))} billion${num % 1000000000 ? " " + numberToWords(num % 1000000000) : ""}`;
+  return "Number too large to convert to words";
+}
+
+console.log(numberToWords(25));
+
+
