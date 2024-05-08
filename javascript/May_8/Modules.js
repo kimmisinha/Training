@@ -34,3 +34,16 @@ module.exports = greet;
 export function greet(name) {
     return `Hello, ${name}!`;
 }
+
+
+/*
+
+Dynamic imports allow you to import modules asynchronously, which can be particularly useful when you want to conditionally load modules or lazily load modules only when they are needed. Here's an example demonstrating dynamic imports:
+
+Suppose you have a module called helper.js with the following content:
+
+*/
+// helper.js
+export function sayHello(name) {
+    console.log(`Hello, ${name}!`);
+}
