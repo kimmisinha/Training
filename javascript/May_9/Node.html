@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div id="container">
+    <h1>Hello, World!</h1>
+    <p>This is a paragraph.</p>
+    <!-- This is a comment -->
+</div>
+
+<body>
+</body>
+<script>
+    /*
+    Element Node: Represents an HTML element, like <div>, <p>, <a>, etc.
+    Text Node: Contains text within an HTML element.
+    Comment Node: Represents an HTML comment.
+    */
+
+    /*
+    Why are they relevant?
+    Understanding node properties is crucial when working with the Document Object Model (DOM) in web development. The DOM represents the structure of HTML documents as a tree of nodes, allowing developers to access, manipulate, and update HTML elements dynamically.
+    Node properties provide essential information about each node in the DOM, enabling developers to interact with the document effectively.
+    Why are they needed?
+    Node properties facilitate various tasks, such as traversing the DOM, querying specific elements, updating content dynamically, and handling user interactions.
+    They offer insights into the structure and content of HTML documents, empowering developers to build responsive and interactive web applications.
+    How are they used in projects or real-time implementations?
+    In web development projects, node properties are frequently utilized for tasks like form validation, dynamic content generation, event handling, and more.
+    Real-time implementations leverage node properties to create dynamic user interfaces, update content based on user actions or server responses, and maintain the state of interactive elements.
+*/
+    var newElement = document.createElement("p");
+    var newText = document.createTextNode("This is my createnode");
+    var newcomment = document.createComment("This is comment");
+    console.log("newElement", newElement);
+    console.log("newText", newText);
+    console.log("newcomment", newcomment)
+</script>
+
+</html>

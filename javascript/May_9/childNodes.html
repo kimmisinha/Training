@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>childNodes Example</title>
+</head>
+
+<body>
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+<script>
+    // Accessing the ul element with id "list"
+    const list = document.getElementById('list');
+
+    // Retrieving the child nodes of the ul element
+    const childNodes = list.childNodes;
+
+    // Iterating over the child nodes
+    childNodes.forEach(node => {
+        if (node.nodeType === 1) { // Checking if it's an element node
+            console.log('Element:', node.tagName); // Output: Element: LI
+        }
+    });
+
+</script>
+
+</html>
