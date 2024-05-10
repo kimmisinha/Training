@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- //it help to prevent from default behaviour of dom -->
+    <a href="https://www.scaler.com/topics/event-delegation-in-javascript/" id="clickme">Click me</a>
+    <script>
+        let link=document.getElementById('clickme')
+        link.addEventListener('click',function(e){
+            console.log('clicked button')
+            e.preventDefault()
+        })
+    </script>
+</body>
+</html>
