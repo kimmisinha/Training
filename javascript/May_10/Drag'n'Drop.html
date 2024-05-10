@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Example</title>
+    <style>
+        #draggable {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            position: absolute;
+            cursor: move;
+        }
+    </style>
+</head>
+<body>
+    <div id="draggable">Drag me!</div>
+
+    <script>
+        const draggable = document.getElementById('draggable');
+        let offsetX, offsetY;
+        let isDragging = false;
+
+        draggable.addEventListener('mousedown', startDragging);
+        document.addEventListener('mousemove', drag);
+        document.addEventListener('mouseup', stopDragging);
+
+        function startDragging(e) {
+            // Calculate the offset between the mouse pointer and the top-left corner of the draggable element
+            offsetX = e.clientX - draggable.getBoundingClientRect().left;
+            offsetY = e.clientY - draggable.getBoundingClientRect().top;
+            isDragging = true;
+        }
+
+        function drag(e) {
+            if (isDragging) {
+                // Calculate the new position of the draggable element based on the mouse position
+                const x = e.clientX - offsetX;
+                const y = e.clientY - offsetY;
+
+                // Set the new position of the draggable element
+                draggable.style.left = `${x}px`;
+                draggable.style.top = `${y}px`;
+            }
+        }
+
+        function stopDragging() {
+            isDragging = false;
+        }
+    </script>
+</body>
+</html>
