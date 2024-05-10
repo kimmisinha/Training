@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pointer Events Example</title>
+    <style>
+        #pointerTarget {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="pointerTarget">Pointer Events Target</div>
+
+    <script>
+        const pointerTarget = document.getElementById('pointerTarget');
+
+        pointerTarget.addEventListener('pointerdown', handlePointerDown);
+        pointerTarget.addEventListener('pointermove', handlePointerMove);
+        pointerTarget.addEventListener('pointerup', handlePointerUp);
+
+        function handlePointerDown(event) {
+            console.log('Pointer down');
+            console.log('Pointer type:', event.pointerType);
+        }
+
+        function handlePointerMove(event) {
+            console.log('Pointer move');
+        }
+
+        function handlePointerUp(event) {
+            console.log('Pointer up');
+        }
+    </script>
+</body>
+</html>
