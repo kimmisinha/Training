@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Capturing and Bubbling Example</title>
+<style>
+    #outer {
+        padding: 20px;
+        background-color: lightblue;
+    }
+    #inner {
+        padding: 20px;
+        background-color: lightgreen;
+    }
+</style>
+</head>
+<body>
+
+<div id="outer">
+    <div id="inner">Click me!</div>
+</div>
+
+<script>
+    // Event capturing phase
+    document.getElementById('outer').addEventListener('click', function() {
+        console.log('Capturing: Outer Element');
+    }, true); // specifying 'true' enables capturing
+
+    document.getElementById('inner').addEventListener('click', function() {
+        console.log('Capturing: Inner Element');
+    }, true); // specifying 'true' enables capturing
+
+    // Event bubbling phase
+    document.getElementById('outer').addEventListener('click', function() {
+        console.log('Bubbling: Outer Element');
+    });
+
+    document.getElementById('inner').addEventListener('click', function() {
+        console.log('Bubbling: Inner Element');
+    });
+</script>
+
+</body>
+</html>

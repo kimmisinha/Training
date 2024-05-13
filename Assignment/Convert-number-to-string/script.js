@@ -25,6 +25,6 @@ function numberToWords(num) {
   return "Number too large to convert to words";
 }
 
-console.log(numberToWords(25));
+console.log(numberToWords(425));
 
 
