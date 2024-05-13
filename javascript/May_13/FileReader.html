@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File and FileReader Example</title>
+</head>
+<body>
+
+<h2>Select a File</h2>
+<input type="file" id="fileInput">
+
+<script>
+// Get the file input element
+var fileInput = document.getElementById('fileInput');
+
+// Event listener for file input change
+fileInput.addEventListener('change', function(event) {
+  // Get the selected file
+  var file = event.target.files[0];
+
+  // Create a new FileReader instance
+  var fileReader = new FileReader();
+
+  // Read file contents as text
+  fileReader.readAsText(file);
+
+  // Handle onload event to access the file contents
+  fileReader.onload = function(event) {
+    var fileContents = event.target.result;
+    console.log('File contents:', fileContents);
+    // You can do further processing with the file contents here
+  };
+
+  // Handle onerror event
+  fileReader.onerror = function(event) {
+    console.error('Error reading file:', event.target.error);
+  };
+});
+</script>
+
+</body>
+</html>
