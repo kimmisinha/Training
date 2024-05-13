@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popup and Window Methods Example</title>
+</head>
+<body>
+
+<h2>Popup and Window Methods Example</h2>
+
+<!-- Button to open a new window -->
+<button onclick="openNewWindow()">Open New Window</button>
+
+<!-- Button to close the current window -->
+<button onclick="closeCurrentWindow()">Close Current Window</button>
+
+<!-- Button to display an alert -->
+<button onclick="displayAlert()">Display Alert</button>
+
+<!-- Button to display a confirmation dialog -->
+<button onclick="displayConfirmation()">Display Confirmation</button>
+
+<!-- Button to display a prompt dialog -->
+<button onclick="displayPrompt()">Display Prompt</button>
+
+<!-- Button to scroll to a specific position -->
+<button onclick="scrollToPosition()">Scroll To Position</button>
+
+<!-- Button to resize the window -->
+<button onclick="resizeWindow()">Resize Window</button>
+
+<!-- Button to redirect to a new URL -->
+<button onclick="redirectToURL()">Redirect To URL</button>
+
+<script>
+// Function to open a new window
+function openNewWindow() {
+  var newWindow = window.open("https://www.example.com", "_blank", "width=500,height=400");
+}
+
+// Function to close the current window
+function closeCurrentWindow() {
+  window.close();
+}
+
+// Function to display an alert dialog
+function displayAlert() {
+  window.alert("Hello, world!");
+}
+
+// Function to display a confirmation dialog
+function displayConfirmation() {
+  var result = window.confirm("Are you sure you want to delete this item?");
+  if (result) {
+    alert("Item deleted!");
+  } else {
+    alert("Deletion canceled.");
+  }
+}
+
+// Function to display a prompt dialog
+function displayPrompt() {
+  var name = window.prompt("Please enter your name:", "");
+  if (name) {
+    alert("Hello, " + name + "!");
+  }
+}
+
+// Function to scroll to a specific position
+function scrollToPosition() {
+  window.scrollTo(0, 500);
+}
+
+// Function to resize the window
+function resizeWindow() {
+  window.resizeTo(800, 600);
+}
+
+// Function to redirect to a new URL
+function redirectToURL() {
+  window.location.href = "https://www.example.com";
+}
+</script>
+
+</body>
+</html>
