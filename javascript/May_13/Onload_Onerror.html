@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Error Handling Example</title>
+</head>
+<body>
+
+<h2>Image Error Handling Example</h2>
+<img id="myImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_nfSz-Iw0_dTiluHLDTvxugiJXg75rfAlBac1YlaYg&s" alt="Nonexistent Image">
+
+<script>
+// Get the image element
+var image = document.getElementById("myImage");
+
+// Define the onload event handler
+image.onload = function() {
+  console.log("Image loaded successfully!");
+};
+
+// Define the onerror event handler
+image.onerror = function() {
+  console.error("Error loading image:", image.src);
+};
+</script>
+
+</body>
+</html>

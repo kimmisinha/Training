@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Focus and Blur Example</title>
+</head>
+<body>
+
+<input type="text" id="myInput" placeholder="Click here to focus">
+<button onclick="removeFocus()">Remove Focus</button>
+
+<script>
+function removeFocus() {
+  var inputElement = document.getElementById("myInput");
+  inputElement.blur(); // Remove focus from input element
+}
+
+// Focus on the input field when the page loads
+window.onload = function() {
+  var inputElement = document.getElementById("myInput");
+  inputElement.focus();
+};
+</script>
+
+</body>
+</html>
