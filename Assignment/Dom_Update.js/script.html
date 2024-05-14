@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heavy DOM Update Example</title>
+</head>
+<body>
+    <div id="content">
+        <!-- This is where the content will be updated -->
+    </div>
+
+    <button onclick="updateHeavyDOM()">Update Heavy Content</button>
+
+    <script>
+        function updateHeavyDOM() {
+            var contentDiv = document.getElementById("content");
+
+            // Add 1000 paragraphs to the content div with a delay of 10 milliseconds between each addition
+            for (var i = 0; i < 1000; i++) {
+                setTimeout(function() {
+                    var newParagraph = document.createElement("p");
+                    newParagraph.textContent = "This is the heavy content update!";
+                    contentDiv.appendChild(newParagraph);
+                }, 100 * i);
+            }
+        }
+    </script>
+</body>
+</html>
