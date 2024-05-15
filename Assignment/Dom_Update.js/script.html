@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heavy DOM Update Example</title>
+    <title>Appending Divs</title>
 </head>
 <body>
-    <div id="content">
-        <!-- This is where the content will be updated -->
-    </div>
-
-    <button onclick="updateHeavyDOM()">Update Heavy Content</button>
+    <div id="container"></div>
+    <div id="container_2"></div>
 
     <script>
-        function updateHeavyDOM() {
-            var contentDiv = document.getElementById("content");
-
-            // Add 1000 paragraphs to the content div with a delay of 10 milliseconds between each addition
-            for (var i = 0; i < 1000; i++) {
-                setTimeout(function() {
-                    var newParagraph = document.createElement("p");
-                    newParagraph.textContent = "This is the heavy content update!";
-                    contentDiv.appendChild(newParagraph);
-                }, 100 * i);
+        document.addEventListener("DOMContentLoaded", async function () {
+            const container_2 = document.getElementById('container_2')
+            let num_of_div = 200;
+            for (let i = 0; i < num_of_div; i++) {
+                const div_2 = document.createElement('div');
+                div_2.textContent = `Div${i + 1}`;
+                container_2.append(div_2);
             }
-        }
+            // Adding a setTimeout to pause execution before appending to container
+            setTimeout(() => {
+                const container = document.getElementById('container');
+                // Number of divs to append
+                const numberOfDivs = 10000000;
+
+                for (let i = 0; i < numberOfDivs; i++) {
+                    const div = document.createElement('div');
+                    div.textContent = `Div ${i + 1}`;
+                    container.appendChild(div);
+
+                    // Check for alerts
+                    if (i === 999999) {
+                        // alert("1 million divs appended!");
+                        alert('website is loading.......')
+
+                    } else if (i === 19999) {
+                        alert("20,000 divs appended!");
+                        alert('website is loading.......')
+                    }
+                }
+
+                console.log("All divs appended!");
+            }, 1000); // Pause for 1 second (1000 milliseconds)
+        });
     </script>
 </body>
+</style>
 </html>
