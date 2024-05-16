@@ -107,8 +107,32 @@ So, the post-order traversal of the tree is: 3, 7, 5, 12, 18, 15, 10.
 
 */
 
+//Binary tree
+
 class Node {
     constructor(data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+// Example usage:
+const rootNode = new Node(10);
+const leftNode = new Node(5);
+const rightNode = new Node(15);
+
+
+rootNode.left = leftNode;
+rootNode.right = rightNode;
+
+console.log("Root node:", rootNode);
+
+
+/*
+class Node {
+    constructor(data) {
+        console.log(data)
         this.data = data;
         this.left = null;
         this.right = null;
@@ -159,4 +183,6 @@ tree.insert(3);
 tree.insert(7);
 
 // console.log("tree:", JSON.stringify(tree)); 
-console.log("tree:", JSON.stringify(tree)); 
+console.log("tree:", (tree)); 
+
+*/
