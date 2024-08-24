@@ -19,7 +19,10 @@
     }
 
     body {
-      background-color: 37, 77%, 43%;
+      background-color: pink;
+      background-image: url('favicon.png');
+      background-repeat: no-repeat;
+      
     }
 
     #kimmi {
@@ -27,6 +30,28 @@
       width: 80px;
       color: 41, 178, 99;
     }
+    .nav-details{
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      text-align: center;
+      border: 1px solid blue;
+    }
+    nav ul li a{
+      text-decoration: none;
+      text-decoration-style: none;
+      border: 1px solid blue;
+
+    }
+    nav ul{
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+      border: 1px solid blue;
+
+    }
+
   </style>
 </head>
 
@@ -84,9 +109,9 @@
     </form>
   </div>
 
-  <header>
+  <header class="head-section">
     <h1>Welcome to Our Website</h1>
-    <nav>
+    <nav class="nav-details">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
