@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ajax</title>
+    <title>AJAX POST Request</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,17 +13,42 @@
   </head>
   <body>
     <h1>Hello, world!</h1>
-    <button type="button"  id="fetch-btn" class="btn btn-primary">fetch data</button>
-    <button type="button"  id="pop-btn" class="btn btn-secondary">Back-up data</button>
+    <button type="button" id="fetch-btn" class="btn btn-primary">
+      Fetch Data
+    </button>
     <div class="container">
-      <h1>Employee list</h1>
-      <li id="list"></li>
+      <h1>Response</h1>
+      <pre id="response-output"></pre>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./Ajax.js"></script>
+    <script>
+      // JavaScript code will be added here
+      let fetchbtn = document.getElementById("fetch-btn");
+      fetchbtn.addEventListener("click", buttonClickHandler);
+
+      function buttonClickHandler() {
+        console.log("You have clicked the fetchBtn");
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+        xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+        xhr.onload = function () {
+          if (this.status === 200) {
+            console.log("Response received:", this.responseText);
+            document.getElementById("response-output").textContent =
+              this.responseText;
+          } else {
+            alert("Some error occurred");
+            console.log("Some error occurred");
+          }
+        };
+
+        xhr.send();
+        console.log("Request sent!");
+      }
+    </script>
   </body>
 </html>
