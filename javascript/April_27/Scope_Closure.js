@@ -1,9 +1,12 @@
 /*
+
 Scope:
 Scope refers to the context in which variables are declared and accessed. In JavaScript, 
 variables have function-level scope by default, meaning that they are accessible only 
 within the function in which they are declared, as well as any nested functions. Variables 
-declared outside of any function have global scope, meaning they are accessible throughout the entire script.
+declared outside of any function have global scope, meaning they are accessible
+throughout the entire script.
+
 */
 function outerFunction() {
   var outerVariable = 'I am in outer function';

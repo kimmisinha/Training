@@ -23,18 +23,16 @@ Module bundlers: When developing for the web, use module bundlers like Webpack o
 
 //Here's a simple example demonstrating the usage  module syntax
 function greet(name) {
-    return `Hello, ${name}!`;
+  return `Hello, ${name}!`;
 }
 
 module.exports = greet;
 
-
 // Here's a simple example demonstrating the usage of ES6 modules:
 
 export function greet(name) {
-    return `Hello, ${name}!`;
+  return `Hello, ${name}!`;
 }
-
 
 /*
 
@@ -45,5 +43,5 @@ Suppose you have a module called helper.js with the following content:
 */
 // helper.js
 export function sayHello(name) {
-    console.log(`Hello, ${name}!`);
+  console.log(`Hello, ${name}!`);
 }

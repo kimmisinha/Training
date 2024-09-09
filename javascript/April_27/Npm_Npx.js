@@ -1,8 +1,10 @@
 /* npm (Node Package Manager):
+
 npm is primarily used for managing packages and dependencies for Node.js projects.
 It allows you to install, uninstall, update, and manage packages for your project.
 It also provides functionality for managing project scripts, versioning, and publishing packages to the npm registry.
 npm install <package-name>
+
 */
 
 /* npx (Node Package Executer):

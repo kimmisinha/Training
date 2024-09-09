@@ -20,11 +20,12 @@
 
     // Retrieving the child nodes of the ul element
     const childNodes = list.childNodes;
+    console.log("childNodes",childNodes)
 
     // Iterating over the child nodes
     childNodes.forEach(node => {
         if (node.nodeType === 1) { // Checking if it's an element node
-            console.log('Element:', node.tagName); // Output: Element: LI
+            // console.log('Element:', node.tagName); // Output: Element: LI
         }
     });
 

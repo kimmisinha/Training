@@ -46,6 +46,7 @@ Error Handling: Promises have built-in error handling capabilities with .then() 
 Chaining: Promises support method chaining with .then() for sequential execution of asynchronous tasks, improving code organization and readability.
 Composition: Promises can be composed using methods like Promise.all() and Promise.race() for parallel or race conditions, simplifying complex asynchronous workflows.
 */
+
 function getDataFromServer_2(){
    return new Promise((resolve,reject)=>{
     setTimeout(()=>{
@@ -54,6 +55,8 @@ function getDataFromServer_2(){
     },1000)
    });
 }
+
+
 function processData_2(data){
   return new Promise((resolve,reject)=>{
     setTimeout(()=>{
@@ -62,6 +65,8 @@ function processData_2(data){
     },1000)
   });
 }
+
+
 function displayData_2(data){
   return new Promise((resolve,reject)=>{
     setTimeout(()=>{

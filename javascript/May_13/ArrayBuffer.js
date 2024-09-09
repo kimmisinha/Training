@@ -4,6 +4,7 @@ ArrayBuffer is a fundamental building block in JavaScript for working with binar
 It provides a raw memory buffer that can store binary data in a fixed length, contiguous chunk of memory.
  There are several reasons why ArrayBuffer is essential:
 
+ 
 */
 
 // Create an ArrayBuffer with a length of 16 bytes

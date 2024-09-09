@@ -17,6 +17,7 @@ console.log(a);
 
 console.log(a);
 var a = 10;
+
 /*
 Variables declared with let are block-scoped.
 They can be reassigned but not re-declared within the same scope.

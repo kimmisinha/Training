@@ -13,12 +13,13 @@
       const customEvent = new CustomEvent("myCustomEvent", {
         detail: { message: "Custom event data" },
       });
+      // console.log(customEvent)
 
       // Dispatch the custom event when the button is clicked
       const button = document.getElementById("myButton");
       button.addEventListener("click", () => {
-        // button.dispatchEvent(customEvent);
-        var button = document.getElementById("myButton");
+        button.dispatchEvent(customEvent);
+        // var button = document.getElementById("myButton");
         button.style.backgroundColor = "red";
       });
 

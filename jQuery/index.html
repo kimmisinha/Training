@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>jQuery Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <p class="odd">this is my body1</p>
+    <p id="second">this is my body2</p>
+    <p class="odd">this is my body3</p>
+    <p>this is my body4</p>
+    <button id="but">Toggle now</button>
+    <div id="wiki">
+      <!-- Content here -->
+      Lore is a body of knowledge or tradition that is passed down among 
+      members of a culture, usually orally. It's the lore in "folklore," and responsible 
+      for spreading the word on mythical figures like Santa Claus, Paul Bunyan, and even
+       Uncle Sam
+    </div>
+    <form>
+      <input id="inp" type="text" />
+      <textarea id="ta"> this is your value my text area</textarea>
+    </form>
+
+    <!-- Use a CDN to load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Hide element with ID 'second' when any paragraph is clicked
+        $('p').click(function () {
+          $('#second').hide();
+        });
+
+        // Hide elements when a paragraph is double-clicked
+        $('p').dblclick(function () {
+          $('#second').hide();
+          $('.odd').hide();
+        });
+
+        // Hide elements on hover (Note: correct selector IDs/classes are needed)
+        $('p').hover(function () {
+          $('#second').hide();
+          $('.odd').hide();
+        });
+
+        // Show a message on hover
+        $('p').hover(
+          function () {
+            console.log('Thanks for coming');
+          },
+          function () {
+            console.log('Goodbye');
+          }
+        );
+
+        // Click handlers for different selectors
+        $('p').click(function () {
+          console.log('you clicked on p', this);
+        });
+
+        $('#second').click(function () {
+          console.log('Clicked on #second');
+        });
+
+        $('.odd').click(function () {
+          console.log('Clicked on .odd');
+        });
+
+        // Other selectors and actions
+        $('*').click(function () {
+          console.log('Clicked on any element');
+        });
+
+        $('p.odd').click(function () {
+          console.log('Clicked on p elements with class odd');
+        });
+
+        $('p:first').click(function () {
+          console.log('Clicked on the first p element');
+        });
+
+        // Demonstrating jQuery 'on' method with multiple events
+        $('p').on({
+          click: function () {
+            console.log('Thanks for clicking', this);
+          },
+          mouseleave: function () {
+            console.log('Mouse left the paragraph');
+          },
+        });
+
+        // jQuery animations and effects
+        $('#but').click(function () {
+          $('#wiki').fadeOut(5000);
+        });
+
+        // AJAX examples
+        $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) {
+          alert('Data received: ' + data);
+          alert('Status: ' + status);
+        });
+
+        $.post(
+          'https://code.jquery.com/jquery-3.3.1.js',
+          { name: 'harry', channel: 'code with harry' },
+          function (data, status) {
+            alert('Post status: ' + status);
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

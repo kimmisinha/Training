@@ -12,11 +12,11 @@ to create a new object or array with the same properties or elements.
 This method creates a shallow copy, meaning nested objects or arrays will still be 
 references to the original objects or arrays.
 */
-const originalArray = [1, 2, 3];
-console.log("originalArray", originalArray);
-const copiedArray = [...originalArray];
-copiedArray.push("89");
-console.log("copiedArray", copiedArray);
+  const originalArray = [1, 2, 3];
+  console.log("originalArray", originalArray);
+  const copiedArray = [...originalArray];
+  copiedArray.push("89");
+  console.log("copiedArray", copiedArray);
 
 // Using Object.assign():
 
