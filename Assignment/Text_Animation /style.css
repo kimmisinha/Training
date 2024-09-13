@@ -1,0 +1,46 @@
+.rotatingText {
+  font-size: 18px;
+  font-weight: bold;
+  height: 50px;
+  overflow: hidden;
+}
+
+.rotatingText-content {
+  display: flex;
+  flex-direction: column;
+  animation: rotate 4s infinite ease-in-out;
+}
+
+.rotatingText-adjective {
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  /* text-align: center; */
+}
+
+.rotatingText-adjective:nth-child(1) {
+  color: #ff6b6b;
+}
+.rotatingText-adjective:nth-child(2) {
+  color: #4ecdc4;
+}
+.rotatingText-adjective:nth-child(3) {
+  color: #45b7d1;
+}
+@keyframes rotate {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+  33%,
+  53% {
+    transform: translateY(-50px);
+  }
+  66%,
+  86% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(-150px);
+  }
+}
